@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 fs = 4000
 f0 = 121
-t_tup_Nyquist = np.arange(0,0.05,1/4000)
+t_tup_Nyquist = np.arange(0,0.05,1/(3*4000))
 signal_tup_1 = np.sin(2 * np.pi * f0 * t_tup_Nyquist)
 signal_tup_2 = np.sin(2 * np.pi * (f0 + 1*fs) * t_tup_Nyquist)
 signal_tup_3 = np.sin(2 * np.pi * (f0 + 2*fs) * t_tup_Nyquist)
